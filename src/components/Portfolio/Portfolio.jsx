@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Portfolio = <div>Portfolio</div>;
+const Portfolio = ({ children }) => <>{children}</>;
 
 export default Portfolio;
