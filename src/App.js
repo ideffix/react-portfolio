@@ -3,7 +3,9 @@ import Portfolio from './components/Portfolio';
 import WholePageSection from './components/sections/WholePageSection';
 import dna from './images/dna.jpg';
 import mustang from './images/mustang.jpg';
+import coding from './images/coding.jpg';
 import TitleContentScheme from './schemes/TitleContentScheme';
+import BackgroundFixedSection from './components/sections/BackgroundFixedSection';
 
 const App = () => {
     return (
@@ -16,6 +18,9 @@ const App = () => {
                     }
                 />
             </WholePageSection>
+            <BackgroundFixedSection imgSrc={coding} height={200}>
+                Something hereY
+            </BackgroundFixedSection>
             <WholePageSection imgSrc={mustang}>
                 <TitleContentScheme
                     className={'black'}
