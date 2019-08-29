@@ -10,7 +10,7 @@ import BackgroundFixedSection from './components/sections/BackgroundFixedSection
 const App = () => {
     return (
         <Portfolio withNavbar={true}>
-            <WholePageSection imgSrc={dna}>
+            <WholePageSection imgSrc={dna} sectionName={'About me'}>
                 <TitleContentScheme
                     title={"I'm Bartosz Kopciuch"}
                     content={
@@ -18,10 +18,13 @@ const App = () => {
                     }
                 />
             </WholePageSection>
-            <BackgroundFixedSection imgSrc={coding} height={200}>
+            <BackgroundFixedSection
+                imgSrc={coding}
+                height={200}
+                sectionName={'Something here'}>
                 Something hereY
             </BackgroundFixedSection>
-            <WholePageSection imgSrc={mustang}>
+            <WholePageSection imgSrc={mustang} sectionName={'My dream car'}>
                 <TitleContentScheme
                     className={'black'}
                     title={'Mustang <3'}
