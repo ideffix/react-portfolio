@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TitleContentScheme = ({ title, content, className }) => (
     <div className={'container h-100 ' + className}>
@@ -10,5 +11,10 @@ const TitleContentScheme = ({ title, content, className }) => (
         </div>
     </div>
 );
+
+TitleContentScheme.propTypes = {
+    title: PropTypes.string,
+    content: PropTypes.string,
+};
 
 export default TitleContentScheme;

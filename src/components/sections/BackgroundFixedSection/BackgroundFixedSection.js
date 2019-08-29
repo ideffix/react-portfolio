@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const BackgroundFixedSection = ({ imgSrc, children, height }) => {
     const backgroundFixedStyle = {
@@ -10,6 +11,11 @@ const BackgroundFixedSection = ({ imgSrc, children, height }) => {
         minHeight: `${height}px`,
     };
     return <div style={backgroundFixedStyle}>{children}</div>;
+};
+
+BackgroundFixedSection.propTypes = {
+    imgSrc: PropTypes.string.isRequired,
+    height: PropTypes.number,
 };
 
 export default BackgroundFixedSection;

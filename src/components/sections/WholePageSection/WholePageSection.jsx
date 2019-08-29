@@ -1,5 +1,6 @@
 import React from 'react';
 import useResolution from '../../../hooks/useResolution';
+import PropTypes from 'prop-types';
 
 const WholePageSection = ({ imgSrc, children }) => {
     const { width, height } = useResolution();
@@ -10,6 +11,10 @@ const WholePageSection = ({ imgSrc, children }) => {
         height,
     };
     return <div style={backgroundStyle}>{children}</div>;
+};
+
+WholePageSection.propTypes = {
+    imgSrc: PropTypes.string,
 };
 
 export default WholePageSection;

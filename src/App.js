@@ -9,7 +9,7 @@ import BackgroundFixedSection from './components/sections/BackgroundFixedSection
 
 const App = () => {
     return (
-        <Portfolio>
+        <Portfolio withNavbar={true}>
             <WholePageSection imgSrc={dna}>
                 <TitleContentScheme
                     title={"I'm Bartosz Kopciuch"}
