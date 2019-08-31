@@ -14,14 +14,10 @@ code {
         monospace;
 }
 
-h1 {
-    font-size: 90px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
 .black {
     color: #000;
+}
+
+#navbar {
+    transition: background-color 1s;
 }

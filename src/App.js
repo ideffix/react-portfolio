@@ -9,7 +9,12 @@ import BackgroundFixedSection from './components/sections/BackgroundFixedSection
 
 const App = () => {
     return (
-        <Portfolio withNavbar={true}>
+        <Portfolio
+            withNavbar={true}
+            navbarOptions={{
+                firstSectionOpacity: true,
+                anchorClass: 'h5 pl-3 pr-3',
+            }}>
             <WholePageSection imgSrc={dna} sectionName={'About me'}>
                 <TitleContentScheme
                     title={"I'm Bartosz Kopciuch"}
@@ -33,6 +38,7 @@ const App = () => {
                     }
                 />
             </WholePageSection>
+            <div sectionName={'New section'}></div>
         </Portfolio>
     );
 };
