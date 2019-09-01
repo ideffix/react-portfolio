@@ -8,7 +8,7 @@ const BackgroundFixedSection = ({ imgSrc, children, height }) => {
         backgroundAttachment: 'fixed',
         position: 'relative',
         width: '100%',
-        minHeight: `${height}px`,
+        height: `${height}px`,
     };
     return <div style={backgroundFixedStyle}>{children}</div>;
 };
